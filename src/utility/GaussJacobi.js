@@ -57,9 +57,10 @@ const guassJacobi = ({ input, iterations, precision }) => {
   }
   let x0y0z0 = [0, 0, 0];
   let intermediateRes = [];
-  let itr = iterations;
+  let itr = iterations ? iterations : 10;
 
   let precisionSetter = 1;
+  precision = precision ? precision : 3;
 
   for (let i = 0; i < precision; i++) {
     precisionSetter = precisionSetter * 10;

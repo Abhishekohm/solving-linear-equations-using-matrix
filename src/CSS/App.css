@@ -121,7 +121,7 @@ li {
 }
 
 .precision-ctn input[type="number"] {
-  width: 40%;
+  width: 600px;
 }
 
 @media screen and (max-width: 1000px) {

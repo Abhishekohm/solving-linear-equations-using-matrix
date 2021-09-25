@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #ff652f;
+  width: 100vw;
+  overflow-x: hidden;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ctn {
+  width: 50%;
+}
+
+.form-ctn form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.form-ctn form h1 {
+  font-size: 30px;
+}
+
+.form-ctn form button {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  background-color: #13a76b;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-ctn form button:hover {
+  cursor: pointer;
+}
+
+.form-ctn input[type="number"] {
+  width: 50px;
+  height: 30px;
+  margin: 25px;
+  text-align: center;
+}
+
+.form-ctn div {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.title-ctn {
+  width: 100%;
+}
+.title-ctn h1 {
+  display: block;
+  margin: auto;
+}
+
+/* result display */
+
+li {
+  list-style: none;
+}
+
+.result-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 50px;
+}
+
+.result-ctn ul {
+  width: 100px;
+  height: auto;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin: 10px 20px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffe401;
+}
+
+.precision-ctn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.precision-ctn input[type="number"] {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .precision-ctn input[type="number"] {
+    width: 500px;
+  }
+  .form-ctn {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .precision-ctn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .precision-ctn input[type="number"] {
+    width: 200px;
+  }
+  .form-ctn {
+    width: 100%;
+  }
+  .title-ctn h1 {
+    font-size: 1.12em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title-ctn h1 {
+    font-size: 1.5em;
+  }
+}

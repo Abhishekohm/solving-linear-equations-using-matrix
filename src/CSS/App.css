@@ -4,12 +4,16 @@
   box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 }
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 #root {
   min-height: 100vh;
-  background-color: #ff652f;
+  background-color: #43aa8b;
   width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -28,6 +32,11 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+}
+
+label {
+  display: inline;
+  vertical-align: middle;
 }
 
 .main {
@@ -59,7 +68,7 @@ button:focus {
   height: 50px;
   display: block;
   margin: auto;
-  background-color: #13a76b;
+  background-color: #f94144;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -102,6 +111,8 @@ li {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 50px;
+  width: 80%;
+  overflow: hidden;
 }
 
 .result-ctn ul {
@@ -112,7 +123,7 @@ li {
   margin: 10px 20px;
   text-align: center;
   padding: 20px 0;
-  background-color: #ffe401;
+  background-color: #f9c74f;
 }
 
 .precision-ctn {
@@ -122,6 +133,12 @@ li {
 
 .precision-ctn input[type="number"] {
   width: 600px;
+}
+
+.input-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 1000px) {

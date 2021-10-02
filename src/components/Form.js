@@ -46,7 +46,7 @@ const Form = () => {
     <>
       <div className="form-ctn">
         <div className="title-ctn">
-          <h1>Guass Jacobi Method</h1>
+          <h1>Iterative Methods of Solving linear equations</h1>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
           <div className="input-ctn">

@@ -93,7 +93,8 @@ label {
 }
 
 .title-ctn {
-  width: 100%;
+  min-width: 100%;
+  width: auto;
 }
 .title-ctn h1 {
   display: block;
